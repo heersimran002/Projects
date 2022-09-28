@@ -1,7 +1,8 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import NewExpense from "./Components/NewExpense/NewExpense";
 
-import ExpenseData from "./Components/ExpenseData";
+import ExpenseData from "./Components/Expenses/ExpenseData";
 function App() {
   const expenses = [
     {
@@ -24,7 +25,12 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  return <ExpenseData expenses={expenses}></ExpenseData>;
+  return (
+    <div>
+      <NewExpense />
+      <ExpenseData expenses={expenses}></ExpenseData>
+    </div>
+  );
 }
 
 export default App;
