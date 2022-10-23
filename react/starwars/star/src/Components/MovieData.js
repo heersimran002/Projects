@@ -10,7 +10,7 @@ import { blue } from "@mui/material/colors";
 function MovieData() {
   const [movies, SetMovies] = useState();
   //get data from api
-  console.log(movies);
+
   useEffect(() => {
     fetch("https://swapi.dev/api/films")
       .then((rest) => rest.json())
