@@ -1,7 +1,11 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
+import { getBasketTotal } from "./reducer";
+import { useStateValue } from "./StateProvider";
 
 function Subtotal() {
+  const [{ basket }, dispatch] = useStateValue();
+  console.log(basket);
   return (
     <div className="flex flex-col justify-between w-72 p-5 bg-white border rounded">
       <CurrencyFormat
@@ -9,7 +13,7 @@ function Subtotal() {
           <>
             {/* calculate the subtotal --> calculate the items */}
             <p>
-              Subtotal ({0} items): <strong>{value}</strong>
+              Subtotal ({basket.length} items): <strong>{value}</strong>
             </p>
             <small className="flex items-center">
               <input className="mr-2" type="checkbox" /> This order contains a
@@ -18,7 +22,7 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={0}
+        value={getBasketTotal(basket)}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}

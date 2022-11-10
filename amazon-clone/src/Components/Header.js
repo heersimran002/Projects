@@ -1,12 +1,15 @@
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import React from "react";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     <div className="h-16 flex items-center bg-slate-900  top-0 z-100">
-      <Link href="/">
+      <Link to="/">
         <img
           className="w-24 object-contain my-0 mr-20 ml-0 mt-18"
           src="https://pngimg.com/uploads/amazon/amazon_PNG28.png"
@@ -40,10 +43,10 @@ function Header() {
           <span className="font-bold">Prime</span>
         </div>
       </div>
-      <Link href="/checkout">
+      <Link to="/checkout">
         <div className="font-bold text-white flex items-center">
           <ShoppingBasketIcon />
-          <span className="mx-2">0</span>
+          <span className="mx-2">{basket?.length}</span>
         </div>
       </Link>
     </div>
