@@ -44,7 +44,15 @@ function Home() {
             rating={4}
           ></Product>
         </div>
-        <div className="flex z-1 mx-2">{/* 1 Products */}</div>
+        <div className="flex z-1 mx-2">
+          {" "}
+          <Product
+            image="https://m.media-amazon.com/images/I/41r5FlsCcyL._SY300_SX300_QL70_FMwebp_.jpg"
+            title="AmazonBasics 81 cm (32 inches) HD Ready Smart LED Fire TV AB32E10SS (Black)"
+            price={1299}
+            rating={4}
+          ></Product>
+        </div>
       </div>
     </div>
   );
