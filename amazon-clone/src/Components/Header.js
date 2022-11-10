@@ -7,7 +7,8 @@ function Header() {
     <div className="h-16 flex items-center bg-slate-900 sticky top-0 z-100">
       <img
         className="w-24 object-contain my-0 mr-20 ml-0 mt-18"
-        src="https://pngimg.com/uploads/amazon/amazon_PNG24.png"
+        // src="https://pngimg.com/uploads/amazon/amazon_PNG24.png"
+        src="https://pngimg.com/uploads/amazon/amazon_PNG28.png"
         alt="logo"
       />
       <div className="flex flex-1 items-center rounded">
