@@ -5,7 +5,7 @@ import { useStateValue } from "./StateProvider";
 
 function Subtotal() {
   const [{ basket }, dispatch] = useStateValue();
-  console.log(basket);
+
   return (
     <div className="flex flex-col justify-between w-72 p-5 bg-white border rounded">
       <CurrencyFormat
