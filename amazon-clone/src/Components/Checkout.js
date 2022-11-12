@@ -1,8 +1,8 @@
-import userEvent from "@testing-library/user-event";
 import React from "react";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
+import FlipMove from "react-flip-move";
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();

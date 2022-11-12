@@ -27,8 +27,8 @@ function Header() {
       </Link>
       <div className="flex flex-1 items-center rounded">
         <input type="text" className="h-3 p-5 border-none w-full" />
-        <div className="h-full bg-amber-600">
-          <SearchIcon className="header__searchIcon"></SearchIcon>
+        <div className="h-10 bg-amber-600 pt-1">
+          <SearchIcon></SearchIcon>
         </div>
       </div>
 
