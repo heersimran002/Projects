@@ -1,10 +1,11 @@
+import userEvent from "@testing-library/user-event";
 import React from "react";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
 
 function Checkout() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <div className="flex p-5 bg-white h-max">
@@ -15,6 +16,7 @@ function Checkout() {
           alt=""
         />
         <div className="mr-2 p-2 text-2xl font-bold border-b">
+          <h1 className="text-xl font-bold">Hello,{user?.email}</h1>
           Your shopping cart
         </div>
 

@@ -3,9 +3,18 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import React from "react";
 import { useStateValue } from "./StateProvider";
+import { auth } from "../firebase";
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
+  console.log(user);
+
+  const handleAuthentication = () => {
+    //for signout
+    if (user) {
+      auth.signOut();
+    }
+  };
 
   return (
     <div className="h-16 flex items-center bg-slate-900  top-0 z-100">
@@ -23,11 +32,13 @@ function Header() {
         </div>
       </div>
 
-      <Link to="/login">
-        <div className="flex justify-evenly">
+      <Link to={!user && "/login"}>
+        <div className="flex justify-evenly" onClick={handleAuthentication}>
           <div className="header_nav flex flex-col mx-2 text-white">
-            <span className="text-sm">Hello Guest</span>
-            <span className="font-bold">Sign</span>
+            <span className="text-sm">
+              Hello {!user ? "Guest" : user.email}
+            </span>
+            <span className="font-bold">{user ? "Sign Out" : "Sign In"}</span>
           </div>
         </div>
       </Link>

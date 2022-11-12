@@ -45,7 +45,7 @@ function Login() {
           />
         </Link>
 
-        <div className="max-w-[400px] h-fit flex flex-col rounded border-2 p-5 justify-center  sm:max-w-[300px]">
+        <div className="max-w-[400px] h-fit flex flex-col rounded border-2 p-5 justify-center">
           <h1 className="font-medium text-2xl mb-5">Sign-in</h1>
 
           <form>
