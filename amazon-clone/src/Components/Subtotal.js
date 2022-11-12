@@ -1,11 +1,17 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
+import { useNavigate } from "react-router-dom";
 import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
 
 function Subtotal() {
   const [{ basket }, dispatch] = useStateValue();
 
+  const history = useNavigate();
+  const handleCheckout = (e) => {
+    e.preventDefault();
+    history("/payment");
+  };
   return (
     <div className="flex flex-col justify-between w-72 p-5 bg-white border rounded">
       <CurrencyFormat
@@ -27,7 +33,10 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
-      <button className="border-2 bg-amber-500 rounded w-full h-7 mt-2 ">
+      <button
+        onClick={handleCheckout}
+        className="border-2 bg-amber-500 rounded w-full h-7 mt-2 "
+      >
         Proceed to checkout
       </button>
     </div>
