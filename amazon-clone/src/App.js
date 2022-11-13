@@ -49,7 +49,7 @@ function App() {
         <Routes>
           {/* Login routes  */}
           <Route path="/login" element={<Login />} />
-          <Route path="/orders" element={<Orders />} />
+          <Route path="/orders" element={[<Header />, <Orders />]} />
 
           {/* Payement routes */}
           <Route

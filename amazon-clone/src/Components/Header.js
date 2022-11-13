@@ -43,12 +43,14 @@ function Header() {
         </div>
       </Link>
 
-      <div className="flex justify-evenly">
-        <div className="header_nav flex flex-col mx-2 text-white">
-          <span className="text-sm">Returns</span>
-          <span className="font-bold">& Orders</span>
+      <Link to="/orders">
+        <div className="flex justify-evenly">
+          <div className="header_nav flex flex-col mx-2 text-white">
+            <span className="text-sm">Returns</span>
+            <span className="font-bold">& Orders</span>
+          </div>
         </div>
-      </div>
+      </Link>
 
       <div className="flex justify-evenly">
         <div className="header_nav flex flex-col mx-2 text-white">

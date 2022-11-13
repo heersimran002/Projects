@@ -2,7 +2,7 @@ import { CompressOutlined } from "@mui/icons-material";
 import React from "react";
 import { useStateValue } from "./StateProvider";
 
-function CheckoutProduct({ id, title, image, rating, price }) {
+function CheckoutProduct({ id, title, image, rating, price, hideButton }) {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
@@ -28,13 +28,14 @@ function CheckoutProduct({ id, title, image, rating, price }) {
               <p>🌟</p>
             ))}
         </div>
-
-        <button
-          onClick={removeFromBasket}
-          className="bg-amber-500 border-2 mt-2 p-1 text-white"
-        >
-          Remove from basket
-        </button>
+        {!hideButton && (
+          <button
+            onClick={removeFromBasket}
+            className="bg-amber-500 border-2 mt-2 p-1 text-white"
+          >
+            Remove from basket
+          </button>
+        )}
       </div>
     </div>
   );

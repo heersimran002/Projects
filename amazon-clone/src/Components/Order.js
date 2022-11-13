@@ -6,11 +6,14 @@ import CurrencyFormat from "react-currency-format";
 
 function Order({ order }) {
   return (
-    <div className="order">
-      <h2>Order</h2>
+    <div className="border p-6 m-4 gap-2 bg-slate-100 flex flex-col">
+      <h2 className="text-2xl font-medium">Order Details</h2>
       <p>{moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}</p>
       <p className="order__id">
-        <small>{order.id}</small>
+        <small>
+          <span className="font-bold tracking-wide">Order Id: </span>
+          {order.id}
+        </small>
       </p>
       {order.data.basket?.map((item) => (
         <CheckoutProduct
@@ -24,7 +27,7 @@ function Order({ order }) {
       ))}
       <CurrencyFormat
         renderText={(value) => (
-          <h3 className="order__total">Order Total: {value}</h3>
+          <h3 className="text-xl font-bold">Order Total: {value}</h3>
         )}
         decimalScale={2}
         value={order.data.amount / 100}
