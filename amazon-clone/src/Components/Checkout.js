@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
@@ -18,8 +19,6 @@ function Checkout() {
           <h1 className="text-xl font-bold">Hello,{user?.email}</h1>
           Your shopping cart
         </div>
-
-        {/* checkout cart item components */}
 
         {basket?.map((item) => (
           <CheckoutProduct

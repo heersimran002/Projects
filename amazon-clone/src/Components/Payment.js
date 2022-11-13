@@ -36,7 +36,6 @@ function Payment() {
   }, [basket]);
 
   console.log("THE SECRET IS >>>", clientSecret);
-  console.log("👱", user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,6 +75,8 @@ function Payment() {
   };
   return (
     <div className="bg-white">
+      {/* checkout cart item components */}
+
       <h1 className="text-center p-2 text-3xl border-b">
         <Link to="/checkout"> Checkout({basket?.length} items)</Link>
       </h1>
