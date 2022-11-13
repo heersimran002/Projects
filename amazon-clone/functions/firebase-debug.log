@@ -1,0 +1,1016 @@
+[debug] [2022-11-13T03:24:10.734Z] ----------------------------------------------------------------------
+[debug] [2022-11-13T03:24:10.736Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\karan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-11-13T03:24:10.737Z] CLI Version:   11.16.0
+[debug] [2022-11-13T03:24:10.737Z] Platform:      win32
+[debug] [2022-11-13T03:24:10.737Z] Node Version:  v16.17.1
+[debug] [2022-11-13T03:24:10.738Z] Time:          Sat Nov 12 2022 21:24:10 GMT-0600 (Central Standard Time)
+[debug] [2022-11-13T03:24:10.738Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-13T03:24:10.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-13T03:24:10.831Z] > authorizing via signed-in user (heersimran002@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-11-13T03:24:10.846Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-13T03:24:10.846Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-13T03:24:10.847Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-11-13T03:24:10.856Z] [hub] writing locator at C:\Users\karan\AppData\Local\Temp\hub-clone-36b38.json
+[debug] [2022-11-13T03:24:10.885Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-13T03:24:10.886Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-13T03:24:10.886Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-11-13T03:24:10.920Z] defaultcredentials: writing to file C:\Users\karan\AppData\Roaming\firebase\heersimran002_gmail_com_application_default_credentials.json
+[debug] [2022-11-13T03:24:10.926Z] Setting GAC to C:\Users\karan\AppData\Roaming\firebase\heersimran002_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\karan\\AppData\\Roaming\\firebase\\heersimran002_gmail_com_application_default_credentials.json"}}
+[debug] [2022-11-13T03:24:10.928Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38/adminSdkConfig [none]
+[debug] [2022-11-13T03:24:11.212Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38/adminSdkConfig 200
+[debug] [2022-11-13T03:24:11.213Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38/adminSdkConfig {"projectId":"clone-36b38","storageBucket":"clone-36b38.appspot.com"}
+[debug] [2022-11-13T03:24:11.228Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-36b38/sites 
+[debug] [2022-11-13T03:24:11.637Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-36b38/sites 200
+[debug] [2022-11-13T03:24:11.637Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-36b38/sites {"sites":[{"name":"projects/clone-36b38/sites/clone-36b38","defaultUrl":"https://clone-36b38.web.app","appId":"1:951172456331:web:d63f99fffbbf26c76b998e","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-13T03:24:11.637Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38/webApps/1:951172456331:web:d63f99fffbbf26c76b998e/config [none]
+[debug] [2022-11-13T03:24:12.017Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38/webApps/1:951172456331:web:d63f99fffbbf26c76b998e/config 200
+[debug] [2022-11-13T03:24:12.017Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38/webApps/1:951172456331:web:d63f99fffbbf26c76b998e/config {"projectId":"clone-36b38","appId":"1:951172456331:web:d63f99fffbbf26c76b998e","storageBucket":"clone-36b38.appspot.com","apiKey":"AIzaSyA-_SHahQMpDhSy2hioGo76OnWK3HU968Y","authDomain":"clone-36b38.firebaseapp.com","messagingSenderId":"951172456331","measurementId":"G-RC62KPD7MR"}
+[debug] [2022-11-13T03:24:12.024Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38 [none]
+[debug] [2022-11-13T03:24:12.242Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38 200
+[debug] [2022-11-13T03:24:12.243Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-36b38 {"projectId":"clone-36b38","projectNumber":"951172456331","displayName":"amazon-clone","name":"projects/clone-36b38","resources":{"hostingSite":"clone-36b38"},"state":"ACTIVE","etag":"1_8992e349-c45a-4b51-800d-f29538d9df16"}
+[info] i  hosting[clone-36b38]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-36b38]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-11-13T03:24:12.269Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-11-13T03:24:12.269Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-11-13T03:24:12.269Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\karan\\.cache\\firebase\\emulators\\ui-v1.11.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\karan\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-11-13T03:24:12.464Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-11-13T03:24:12.465Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\karan\Desktop\Projects\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-11-13T03:24:12.545Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:24:15.554Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:24:15.554Z] Building nodejs source
+[debug] [2022-11-13T03:24:15.555Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:24:15.556Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:24:15.903Z] Serving at port 9005
+
+[debug] [2022-11-13T03:24:16.033Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:24:16.041Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-36b38/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-36b38/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-11-13T03:24:41.236Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-13T03:24:41.236Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-13T03:24:41.237Z] Accepted request GET /clone-36b38/us-central1/api --> us-central1-api
+[debug] [2022-11-13T03:24:41.241Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-11-13T03:24:41.241Z] [functions] Got req.url=/clone-36b38/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-36b38/us-central1/api, mapping to path=/"}}
+[debug] [2022-11-13T03:24:41.255Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-11-13T03:24:41.256Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-11-13T03:24:42.601Z] [runtime-status] [39432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:24:42.602Z] [runtime-status] [39432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:24:42.602Z] [runtime-status] [39432] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-11-13T03:24:42.603Z] [runtime-status] [39432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:24:42.651Z] [runtime-status] [39432] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-11-13T03:24:42.651Z] [runtime-status] [39432] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-13T03:24:42.652Z] [runtime-status] [39432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:24:42.653Z] [runtime-status] [39432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:24:42.654Z] [runtime-status] [39432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:24:42.655Z] [runtime-status] [39432] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-13T03:24:42.814Z] [runtime-status] [39432] Functions runtime initialized. {"cwd":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-11-13T03:24:42.815Z] [runtime-status] [39432] Listening to port: \\?\pipe\fire_emu_1cddd955204c9a69 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [39432] Listening to port: \\\\?\\pipe\\fire_emu_1cddd955204c9a69"}}
+[debug] [2022-11-13T03:24:42.894Z] [worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: IDLE"}}
+[debug] [2022-11-13T03:24:42.894Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-11-13T03:24:42.895Z] [worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-11-13T03:24:42.905Z] [worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: IDLE"}}
+[debug] [2022-11-13T03:24:42.905Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 6.2341ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 6.2341ms"}}
+[debug] [2022-11-13T03:24:42.922Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-11-13T03:26:31.277Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:26:32.294Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:26:35.324Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:26:35.324Z] Building nodejs source
+[debug] [2022-11-13T03:26:35.324Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:26:35.326Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:26:35.605Z] Serving at port 9005
+
+[debug] [2022-11-13T03:26:35.732Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:26:35.738Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:26:35.753Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-11-13T03:26:35.753Z] [worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: FINISHING"}}
+[debug] [2022-11-13T03:26:35.762Z] [worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: exited"}}
+[debug] [2022-11-13T03:26:35.762Z] [worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-447e0e5a-e56d-4a0a-b2a8-dfa329f0dcbf]: FINISHED"}}
+[debug] [2022-11-13T03:26:36.904Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-13T03:26:36.904Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-13T03:26:36.905Z] Accepted request GET /clone-36b38/us-central1/api/payment --> us-central1-api
+[debug] [2022-11-13T03:26:36.908Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-11-13T03:26:36.909Z] [functions] Got req.url=/clone-36b38/us-central1/api/payment, mapping to path=/payment {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-36b38/us-central1/api/payment, mapping to path=/payment"}}
+[debug] [2022-11-13T03:26:36.909Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-11-13T03:26:36.918Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-11-13T03:26:36.918Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-11-13T03:26:38.266Z] [runtime-status] [30188] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:26:38.268Z] [runtime-status] [30188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:26:38.269Z] [runtime-status] [30188] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-11-13T03:26:38.270Z] [runtime-status] [30188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:26:38.320Z] [runtime-status] [30188] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-11-13T03:26:38.320Z] [runtime-status] [30188] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-13T03:26:38.321Z] [runtime-status] [30188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:26:38.323Z] [runtime-status] [30188] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:26:38.323Z] [runtime-status] [30188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:26:38.323Z] [runtime-status] [30188] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-13T03:26:38.499Z] [runtime-status] [30188] Functions runtime initialized. {"cwd":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-11-13T03:26:38.499Z] [runtime-status] [30188] Listening to port: \\?\pipe\fire_emu_c40cfcd2cdec3e4f {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [30188] Listening to port: \\\\?\\pipe\\fire_emu_c40cfcd2cdec3e4f"}}
+[debug] [2022-11-13T03:26:38.564Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: IDLE"}}
+[debug] [2022-11-13T03:26:38.564Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-11-13T03:26:38.564Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-11-13T03:26:38.571Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: IDLE"}}
+[debug] [2022-11-13T03:26:38.571Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 4.1066ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 4.1066ms"}}
+[debug] [2022-11-13T03:26:42.006Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-13T03:26:42.006Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-13T03:26:42.006Z] Accepted request GET /clone-36b38/us-central1/api/payments --> us-central1-api
+[debug] [2022-11-13T03:26:42.011Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-11-13T03:26:42.012Z] [functions] Got req.url=/clone-36b38/us-central1/api/payments, mapping to path=/payments {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-36b38/us-central1/api/payments, mapping to path=/payments"}}
+[debug] [2022-11-13T03:26:42.012Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-11-13T03:26:42.012Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-11-13T03:26:42.018Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: IDLE"}}
+[debug] [2022-11-13T03:26:42.018Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 3.0653ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 3.0653ms"}}
+[debug] [2022-11-13T03:26:58.798Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:26:59.807Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:27:02.949Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:27:02.949Z] Building nodejs source
+[debug] [2022-11-13T03:27:02.950Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:27:02.950Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:27:03.193Z] Serving at port 9005
+
+[debug] [2022-11-13T03:27:03.207Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-11-13T03:27:03.210Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-11-13T03:27:03.213Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-11-13T03:27:17.127Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:27:18.140Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:27:21.057Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:27:21.057Z] Building nodejs source
+[debug] [2022-11-13T03:27:21.057Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:27:21.057Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:27:21.307Z] Serving at port 9005
+
+[debug] [2022-11-13T03:27:21.323Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2022-11-13T03:27:21.324Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2022-11-13T03:27:21.328Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2022-11-13T03:28:08.884Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:28:09.892Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:28:12.647Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:28:12.647Z] Building nodejs source
+[debug] [2022-11-13T03:28:12.647Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:28:12.648Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:28:12.922Z] Serving at port 9005
+
+[debug] [2022-11-13T03:28:13.054Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:28:13.058Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:28:13.075Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-11-13T03:28:13.075Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: FINISHING"}}
+[debug] [2022-11-13T03:28:13.083Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: exited"}}
+[debug] [2022-11-13T03:28:13.084Z] [worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b86f8d3a-5888-457a-978c-5979de268dc1]: FINISHED"}}
+[debug] [2022-11-13T03:28:51.518Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-13T03:28:51.518Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-13T03:28:51.518Z] Accepted request GET /clone-36b38/us-central1/api --> us-central1-api
+[debug] [2022-11-13T03:28:51.522Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-11-13T03:28:51.523Z] [functions] Got req.url=/clone-36b38/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-36b38/us-central1/api, mapping to path=/"}}
+[debug] [2022-11-13T03:28:51.523Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-11-13T03:28:51.531Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-11-13T03:28:51.531Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-11-13T03:28:52.797Z] [runtime-status] [28976] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:28:52.799Z] [runtime-status] [28976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:28:52.800Z] [runtime-status] [28976] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-11-13T03:28:52.800Z] [runtime-status] [28976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:28:52.849Z] [runtime-status] [28976] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-11-13T03:28:52.849Z] [runtime-status] [28976] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-13T03:28:52.850Z] [runtime-status] [28976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:28:52.851Z] [runtime-status] [28976] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:28:52.852Z] [runtime-status] [28976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-11-13T03:28:52.852Z] [runtime-status] [28976] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-11-13T03:28:53.011Z] [runtime-status] [28976] Functions runtime initialized. {"cwd":"C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\karan\\\\Desktop\\\\Projects\\\\amazon-clone\\\\functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-11-13T03:28:53.011Z] [runtime-status] [28976] Listening to port: \\?\pipe\fire_emu_7a7654e6e89145c0 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [28976] Listening to port: \\\\?\\pipe\\fire_emu_7a7654e6e89145c0"}}
+[debug] [2022-11-13T03:28:53.038Z] [worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: IDLE"}}
+[debug] [2022-11-13T03:28:53.039Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-11-13T03:28:53.039Z] [worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-11-13T03:28:53.046Z] [worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: IDLE"}}
+[debug] [2022-11-13T03:28:53.047Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 3.9889ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 3.9889ms"}}
+[debug] [2022-11-13T03:29:04.063Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:29:05.076Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:29:07.862Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:29:07.863Z] Building nodejs source
+[debug] [2022-11-13T03:29:07.863Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:29:07.863Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:29:08.101Z] Serving at port 9005
+
+[debug] [2022-11-13T03:29:08.245Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:29:08.251Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:29:08.268Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-11-13T03:29:08.268Z] [worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: FINISHING"}}
+[debug] [2022-11-13T03:29:08.277Z] [worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: exited"}}
+[debug] [2022-11-13T03:29:08.278Z] [worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9343271f-5cfa-441c-b872-16b0f3f669c0]: FINISHED"}}
+[debug] [2022-11-13T03:29:10.027Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:29:11.035Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:29:14.105Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:29:14.105Z] Building nodejs source
+[debug] [2022-11-13T03:29:14.105Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:29:14.106Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:29:14.449Z] Serving at port 9005
+
+[debug] [2022-11-13T03:29:14.570Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:29:14.575Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:29:27.807Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:29:28.815Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:29:31.884Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:29:31.885Z] Building nodejs source
+[debug] [2022-11-13T03:29:31.885Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:29:31.887Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:29:31.909Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:29:32.126Z] Serving at port 9005
+
+[debug] [2022-11-13T03:29:32.260Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:29:32.266Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:29:32.914Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:29:36.119Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:29:36.119Z] Building nodejs source
+[debug] [2022-11-13T03:29:36.119Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:29:36.120Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:29:36.351Z] Serving at port 9005
+
+[debug] [2022-11-13T03:29:36.479Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:29:36.485Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:29:47.753Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:29:48.766Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:29:51.894Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:29:51.894Z] Building nodejs source
+[debug] [2022-11-13T03:29:51.894Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:29:51.895Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:29:52.152Z] Serving at port 9005
+
+[debug] [2022-11-13T03:29:52.267Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:29:52.272Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:30:03.968Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:30:04.982Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:30:08.016Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:30:08.016Z] Building nodejs source
+[debug] [2022-11-13T03:30:08.016Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:30:08.017Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:30:08.237Z] Serving at port 9005
+
+[debug] [2022-11-13T03:30:08.361Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:30:08.366Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:30:27.401Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:30:28.412Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:30:32.322Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:30:32.323Z] Building nodejs source
+[debug] [2022-11-13T03:30:32.323Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:30:32.324Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:30:32.346Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:30:32.637Z] Serving at port 9005
+
+[debug] [2022-11-13T03:30:32.798Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:30:32.803Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:30:33.348Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:30:38.052Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:30:38.052Z] Building nodejs source
+[debug] [2022-11-13T03:30:38.052Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:30:38.053Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:30:38.161Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:30:38.438Z] Serving at port 9005
+
+[debug] [2022-11-13T03:30:38.652Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:30:38.663Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:30:39.167Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:30:42.877Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:30:42.877Z] Building nodejs source
+[debug] [2022-11-13T03:30:42.877Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:30:42.878Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:30:43.266Z] Serving at port 9005
+
+[debug] [2022-11-13T03:30:43.447Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:30:43.455Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:31:22.375Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:31:23.383Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:31:26.315Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:31:26.316Z] Building nodejs source
+[debug] [2022-11-13T03:31:26.316Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:31:26.316Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:31:26.540Z] Serving at port 9005
+
+[debug] [2022-11-13T03:31:26.552Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2022-11-13T03:31:26.553Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2022-11-13T03:31:26.556Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2022-11-13T03:31:43.454Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:31:44.459Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:31:47.746Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:31:47.746Z] Building nodejs source
+[debug] [2022-11-13T03:31:47.746Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:31:47.747Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:31:47.761Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:31:48.003Z] Serving at port 9005
+
+[debug] [2022-11-13T03:31:48.134Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:31:48.140Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:31:48.776Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:31:51.550Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:31:51.550Z] Building nodejs source
+[debug] [2022-11-13T03:31:51.550Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:31:51.551Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:31:51.795Z] Serving at port 9005
+
+[debug] [2022-11-13T03:31:51.923Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:31:51.931Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:32:02.751Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:32:03.755Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:32:06.587Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:32:06.587Z] Building nodejs source
+[debug] [2022-11-13T03:32:06.588Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:32:06.588Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:32:06.851Z] Serving at port 9005
+
+[debug] [2022-11-13T03:32:06.980Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:32:06.985Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:32:21.727Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:32:22.742Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:32:25.531Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:32:25.532Z] Building nodejs source
+[debug] [2022-11-13T03:32:25.532Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:32:25.532Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:32:25.896Z] Serving at port 9005
+
+[debug] [2022-11-13T03:32:26.115Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:32:26.125Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-11-13T03:33:20.798Z] File C:\Users\karan\Desktop\Projects\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\karan\\Desktop\\Projects\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-11-13T03:33:21.811Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-13T03:33:25.415Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^10.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-13T03:33:25.415Z] Building nodejs source
+[debug] [2022-11-13T03:33:25.415Z] Analyzing nodejs backend spec
+[debug] [2022-11-13T03:33:25.416Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-13T03:33:26.020Z] Serving at port 9005
+
+[debug] [2022-11-13T03:33:26.373Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-11-13T03:33:26.386Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
