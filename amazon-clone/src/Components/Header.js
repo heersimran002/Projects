@@ -17,7 +17,7 @@ function Header() {
   };
 
   return (
-    <div className="h-16 flex items-center bg-slate-900  top-0 z-100">
+    <div className="h-16 flex items-center bg-slate-900  top-0 z-100 w-full">
       <Link to="/">
         <img
           className="w-24 object-contain my-0 mr-20 ml-0 mt-18"

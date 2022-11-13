@@ -3,14 +3,14 @@ import Product from "./Product";
 
 function Home() {
   return (
-    <div className="flex justify-center mx-auto max-w-6xl">
+    <div className="flex justify-center mx-auto min-w-[400px]  max-w-6xl">
       <div className="">
         <img
           className="w-full -z-1 -mb-36 grad home__image"
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt="bg"
         />
-        <div className="flex z-1 mx-2 justify-center">
+        <div className="flex z-1 mx-2 justify-center flex-col xl:flex-row md:flex-row">
           <Product
             id={1}
             image="https://m.media-amazon.com/images/I/71QTp57MfhL._AC_SX425_.jpg"
@@ -26,7 +26,7 @@ function Home() {
             rating={5}
           ></Product>
         </div>
-        <div className="flex z-1 mx-2 justify-center">
+        <div className="flex z-1 mx-2 justify-center flex-col xl:flex-row md:flex-row">
           <Product
             id={3}
             image="https://m.media-amazon.com/images/I/71hU2icwj2L._AC_SX425_.jpg"
@@ -49,7 +49,7 @@ function Home() {
             rating={4}
           ></Product>
         </div>
-        <div className="flex z-1 mx-2">
+        <div className="flex z-1 mx-2 flex-col xl:flex-row md:flex-row">
           <Product
             id={6}
             image="https://m.media-amazon.com/images/I/41r5FlsCcyL._SY300_SX300_QL70_FMwebp_.jpg"

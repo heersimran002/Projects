@@ -6,6 +6,7 @@ function Login() {
   const history = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const signIn = (e) => {
     e.preventDefault();
     auth
@@ -15,7 +16,7 @@ function Login() {
         history("/");
       })
       .catch((error) => {
-        alert(error.message);
+        setError(error.message);
       });
   };
 
@@ -30,7 +31,7 @@ function Login() {
         }
       })
       .catch((error) => {
-        alert(error.message);
+        setError(error.message);
       });
   };
 
@@ -64,6 +65,9 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            {error ? (
+              <h1 className="text-sm text-red-700 mt-1">Error {error}</h1>
+            ) : null}
 
             <button
               type="submit"

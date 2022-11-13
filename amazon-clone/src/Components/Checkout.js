@@ -7,7 +7,7 @@ function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
 
   return (
-    <div className="flex p-5 bg-white h-max">
+    <div className="flex p-5 bg-white h-max flex-col md:flex-row xl:flex-row">
       <div>
         <img
           className="w-full mb-3"
