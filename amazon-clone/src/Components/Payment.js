@@ -6,6 +6,7 @@ import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
+import { db } from "../firebase";
 
 import axios from "./axios";
 
@@ -48,9 +49,23 @@ function Payment() {
         },
       })
       .then(({ paymentIntent }) => {
+        db.collection("users")
+          .doc(user?.uid)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
+
         setProcessing(false);
         setError(null);
         setSucceeded(true);
+        dispatch({
+          type: "EMPTY_BASKET",
+        });
+
         history("/orders");
       });
   };
